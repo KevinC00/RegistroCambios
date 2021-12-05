@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Registro.Inicio"
+              BackgroundColor="#112B47">
+    <ContentPage.Content>
+        <StackLayout Padding="20"   VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Label Text="Inicio" TextColor="White"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button VerticalOptions="Center" Text="Editar" TextColor="White" BackgroundColor="Transparent"
+                    BorderWidth="1.5" CornerRadius="50" BorderColor="ForestGreen" Clicked="Button_Clicked"></Button>
+            <Button VerticalOptions="Center" Text="Eliminar" TextColor="White" BackgroundColor="Transparent"
+                    BorderWidth="1.5" CornerRadius="50" BorderColor="ForestGreen" Clicked="Eliminar"></Button>
+            <Button VerticalOptions="Center" Text="Consultar" TextColor="White" BackgroundColor="Transparent"
+                    BorderWidth="1.5" CornerRadius="50" BorderColor="ForestGreen" Clicked="Consultar"></Button>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

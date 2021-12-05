@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Registro.pantallas.auth.RegistroPage"
+             BackgroundColor="#112B47">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20"   VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+                <Image Source="Idea.png" WidthRequest="100" HeightRequest="100"></Image>
+
+                <Entry x:Name="txtNombre" Placeholder="Ingresa Nombre " TextColor="White" PlaceholderColor="Gray"></Entry>
+                <Entry x:Name="txtNombreUsuario" Placeholder="Ingresa Nombre de Usuario " TextColor="White" PlaceholderColor="Gray"></Entry>
+                <Entry x:Name="txtApellidoPaterno" Placeholder="Ingresa Apellido Paterno" TextColor="White" PlaceholderColor="Gray"></Entry>
+                <Entry x:Name="txtApellidoMaterno" Placeholder="Ingresa Apellido Materno " TextColor="White" PlaceholderColor="Gray"></Entry>
+                <Label Text="Selecciona tu fecha de nacimiento" TextColor="Gray"></Label>
+                <DatePicker x:Name="dteFechaNacimiento" TextColor="White" Format="yyyy/MM/dd"></DatePicker>
+                <Picker x:Name="pckSexo" TitleColor="Gray" Title="Seleccionar Sexo" TextColor="White"></Picker>
+                <Entry x:Name="txtTelefono" Placeholder="Ingresa Telefono " TextColor="White" PlaceholderColor="Gray" Keyboard="Telephone"></Entry>
+                <Entry x:Name="txtCorreo" Placeholder="Ingresa Correo " TextColor="White" PlaceholderColor="Gray" Keyboard="Email"></Entry>
+                <Entry x:Name="txtContrasena" Placeholder="Ingresa Contraseña" IsPassword="True" TextColor="White" PlaceholderColor="Gray"></Entry>
+                <Picker x:Name="pckRol" TitleColor="Gray" Title="Seleccionar Rol" TextColor="White"></Picker>
+                <Button VerticalOptions="Center" Text="Registrar" TextColor="White" BackgroundColor="Transparent"
+                    BorderWidth="1.5" CornerRadius="50" BorderColor="ForestGreen" Clicked="Button_Clicked"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

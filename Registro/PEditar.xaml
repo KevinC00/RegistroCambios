@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Registro.PEditar"
+             BackgroundColor="#112B47">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+            <Entry Placeholder="Ingresa Nombre " TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="Ingresa Apellido Paterno" TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="Ingresa Apellido Materno " TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="Ingresa Domicilio " TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Label Text="Selecciona tu fecha de nacimiento" TextColor="Gray"></Label>
+            <DatePicker TextColor="Gray" ></DatePicker>
+            <Picker TitleColor="Gray" Title="Select Sexo"></Picker>
+            <Entry Placeholder="Ingresa Correo " TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="Ingresa Contraseña " TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Picker TitleColor="Gray" Title="Select Rol"></Picker>
+            <Button VerticalOptions="Center" Text="Editar" TextColor="White" BackgroundColor="Transparent"
+                    BorderWidth="1.5" CornerRadius="50" BorderColor="ForestGreen"></Button>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

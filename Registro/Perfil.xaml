@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Registro.Perfil"
+             Title="Perfil">
+    <ContentPage.Content>
+        <ScrollView>
+
+
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="140"/>
+                    <RowDefinition Height="140"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+                <Image Source="Fondo.png"  Aspect="AspectFill"   ></Image>
+                <Image Source="CurvedMask.png" Aspect="Fill"
+                   VerticalOptions="End"/>
+                
+                <StackLayout Grid.Row="1" Padding="0,50,0,0" WidthRequest="10" >
+                    <ListView x:Name="NombreCompleto" HasUnevenRows="True" SelectionMode="None" >
+                        <ListView.ItemTemplate >
+                            <DataTemplate  >
+                                <ViewCell   >
+                                    <StackLayout >
+                                      
+                    <Label  Text="{Binding nombre}" Style="{StaticResource ProfileNameLabel}" Grid.Row="0"  ></Label>
+                    <Label  Text="{Binding apellidoPaterno}" Style="{StaticResource ProfileTagLabel}" Grid.Row="1"></Label>
+                    <Label  Text="{Binding apellidoMaterno}" Style="{StaticResource ProfileTagLabel}" Grid.Row="2"></Label>
+                                   
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+
+                <Grid Grid.Row="2" Margin="0,30" ColumnSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                     
+                    </Grid.ColumnDefinitions>
+                    <ListView x:Name="Accesorios" HasUnevenRows="True" SelectionMode="None">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid>
+                                        <StackLayout Grid.Column="0">
+
+                                            <Label Text="2"  Style="{StaticResource StatsNumberLabel}" ></Label>
+                                            <Label Text="Proyectos" Style="{StaticResource StatsCaptionLabel}" ></Label>
+                                        </StackLayout>
+                                        <StackLayout Grid.Column="1">
+                                            <Label Text="{Binding rol}" Style="{StaticResource StatsNumberLabel}"></Label>
+                                            <Label Text="Tipo"  Style="{StaticResource StatsCaptionLabel}"></Label>
+                                        </StackLayout>
+                                        <StackLayout Grid.Column="2">
+                                            <Label Text="{Binding correo}" Style="{StaticResource StatsNumberLabel}"/>
+                                            <Label Text="Correo" Style="{StaticResource StatsCaptionLabel}"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                   
+                </Grid>
+
+                <Label Text="Hola aqui va la descripcion del Usuario" Grid.Row="3"  Margin="20,0"  Style="{StaticResource MainBodyLabel}"></Label>
+
+                <Button  Text="Agregar Idea" Grid.Row="4" Margin="20,0"  Style="{StaticResource FollowButton}"></Button>
+                <Frame CornerRadius="200" HorizontalOptions="Center" 
+           VerticalOptions="Center"
+                      TranslationY="170"
+           HasShadow="True"
+           IsClippedToBounds="True"
+           >
+                <Image Source="FotoPerfil.png" VerticalOptions="End" HorizontalOptions="Center" HeightRequest="120" WidthRequest="120"   ></Image>
+                </Frame>
+            </Grid>
+            
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

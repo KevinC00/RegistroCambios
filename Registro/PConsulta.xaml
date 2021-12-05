@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Registro.PConsulta"
+             Title="USUARIOS">
+    <ContentPage.Content>
+        <StackLayout>
+          
+            <ScrollView>
+            <!--<Button Text="Llamar Usuarios" Clicked="Button_Clicked"/>-->
+            <ListView x:Name="ListaUsuarios" HasUnevenRows="True" ItemTapped="ListaUsuarios_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                     
+                        <ViewCell>
+                            <Grid>
+                                <!-- <Label Text="{Binding id}"  />-->
+                                <Label Grid.Column="0" Text="{Binding nombreUsuario}" />
+                                <Label Grid.Column="1" Text="{Binding nombre}" />
+                                <Label Grid.Column="2" Text="{Binding apellidoPaterno}" />
+                                <Label Grid.Column="3" Text="{Binding apellidoMaterno}"  />
+                                <Label Grid.Column="4" Text="{Binding correo}"  VerticalTextAlignment="End" />
+                               <!-- <Button Text="Delete" BackgroundColor="Red" TextColor="Black" FontSize="Micro" Clicked="Eliminar_Clicked"/> -->
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                    
+                </ListView.ItemTemplate>
+                
+            </ListView>
+            </ScrollView>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

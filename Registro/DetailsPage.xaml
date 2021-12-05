@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Registro.DetailsPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="ID"></Label>
+            <Entry Text="" x:Name="idEntry" TextColor="Blue" IsEnabled="False"></Entry>
+            <Label Text="NameUser"></Label>
+            <Entry Text="" x:Name="NameUserEntry" TextColor="Blue"></Entry>
+            <Label Text="Name"></Label>
+            <Entry Text="" x:Name="NameEntry" TextColor="Blue"></Entry>
+            <Label Text="ApellidoPa"></Label>
+            <Entry Text="" x:Name="ApellidoPaEntry" TextColor="Blue"></Entry>
+            <Label Text="ApellidoMa"></Label>
+            <Entry Text="" x:Name="ApellidoMaEntry" TextColor="Blue"></Entry>
+            <Label Text="Email"></Label>
+            <Entry Text="" x:Name="EmailEntry" TextColor="Blue"></Entry>
+            <Button Text="Eliminar" BackgroundColor="Red" Clicked="Button_Clicked" ></Button>
+            <Button Text="Actualizar" BackgroundColor="Green"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Registro.pantallas.auth.LoginPage"
+             BackgroundColor="#112B47">
+    <ContentPage.Content>
+        <StackLayout Padding="40"   VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+             
+            <Image Source="Idea.png" WidthRequest="180" HeightRequest="180"></Image>
+
+            <Entry x:Name="nombreUsuario" Placeholder="Nombre de Usuario " TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry x:Name="contrasena" Placeholder="Ingresa Contraseña " IsPassword="True" TextColor="White" PlaceholderColor="Gray"></Entry>
+
+            <Button VerticalOptions="Center" Text="Ingresar" TextColor="Black" BackgroundColor="White"
+                    BorderWidth="1.5" CornerRadius="50" BorderColor="ForestGreen" Clicked="Button_Clicked"></Button>
+            <Button VerticalOptions="Center" Text="Registrarse" TextColor="Black" BackgroundColor="White"
+                    BorderWidth="1.5" CornerRadius="50" BorderColor="ForestGreen" Clicked="Button1_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
